@@ -9,7 +9,7 @@
 
 <header>
   <nav>
-    <a href="index.html"> переход на главную страницу
+    <a href="index.html"> 
         <img src="img/logo" width="138" height="70" 
         alt="Логотип Седона»">
     </a>
@@ -23,9 +23,74 @@
 </header>
 
 <main>
-    <h1>каталог гостиниц</h1>
+  <h1 class="visually-hidden">каталог гостиниц</h1>
+  
+  <section>
+    <h2 class="visually-hidden">критерии подбора</h2>
+
+  <!-- Здесь будет фоновый рисунок -->
+  <img src="img/background.jpg" alt="размытый вид на скалы">
+
+      <div><!--Левый блок-->
+        <h3>Инфраструктура:</h3>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+        <div>
+          <input type="checkbox" name="pool" id="pool-field" checked>
+                 <label for="pool-field">Бассейн</label>
+        </div>
+        <div>
+          <input type="checkbox" name="parking" id="parking-field">
+                 <label for="parking-field">Парковка</label>
+        </div>
+        <div>
+          <input type="checkbox" name="network" id="network-field">
+                 <label for="network-field">wi-fi</label>
+        </div>
+        </form>
+
+        <h3>Тип жилья:</h3>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+        <div>
+          <input type="checkbox" name="hostel" id="hostel-field" checked>
+             <label for="hostel-field">Гостиница</label>
+        </div>
+        <div>
+          <input type="checkbox" name="hotel" id="hotel-field" checked>
+             <label for="hotel-field">Отель</label>
+        </div>
+        <div>
+          <input type="checkbox" name="apartments" id="apartments-field" checked>
+             <label for="apartments-field">Апартаменты</label>
+        </div>
+        </form>
+      </div>
+
+      <div> <!--Правый блок-->
+        <h3>Стоимость в сутки (р):</h3>
+        <form action="https://echo.htmlacademy.ru" method="GET" 
+                      oninput="price-at-put.value=price-at-field.value">
+            <output name="price-at-put">От 0</output>
+            <input type="range" id="price-at-field" name="price-at" min="0" max="3000" step="100">
+        </form>
+        <form action="https://echo.htmlacademy.ru" method="GET"  
+                      oninput="price-to-put.value=price-to-field.value">
+            <output name="price-to-put">До 3000</output>
+            <input type="range" id="price-to-field" name="price-to" min="0" max="3000" step="100">
+        </form>
+        <input type="submit" value="Показать">
+      </div>
+  </section>
+  <section>
+    <h2 class="visually-hidden">сортировка</h2> <!--TODO: доделать сортировку-->
+      <p>Найдено: 3</p>
+      <p>Сортировка:</p>
+      <p>по цене</p>
+      <p>по типу</p>
+      <p>по рейтингу</p>
+  </section>
+
     <section>
-        <h2>карточки гостиниц</h2>
+        <h2 class="visually-hidden">карточки гостиниц</h2>
             <div><!--Первая карточка-->
               <div><!--Левый блок-->
                 <img src="img/Layer21.jpg" width="135" height="90" alt="Amara Resort & Spa">
@@ -37,29 +102,19 @@
                      </p>
                      <div>
                         <a href="#" class="button">Подробнее</a>
-                        <a href="#" class="button">Забронировать</a>
+                        <button class="submit">Забронировать</button>
                      </div>
                 </div>
               </div>  
-              <!--
-              <div>  Правый блок
-                  <div>  <span class="star"></span>
-                         <span class="star"></span>
-                         <span class="star"></span>
-                         <span class="star"></span>
-                  </div>
-                  <p>рейтинг: 8.5</p>
-              </div> 
-              --> 
-              <div>
-                <ul> <!--Правый блок-->
-                  <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                  <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                  <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                  <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                </ul>
-                <p>рейтинг: 8.5</p>
+
+              <div><!--Правый блок-->
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
               </div>
+                <p>рейтинг: 8.5</p>
+              
             </div>
 
             <div><!--Вторая карточка-->
@@ -73,27 +128,17 @@
                        </p>
                      <div>
                       <a href="#" class="button">Подробнее</a>
-                      <a href="#" class="button">Забронировать</a>
+                      <button class="submit">Забронировать</button>
                      </div>
                   </div>
                 </div>
-                <!--  
-                <div>Правый блок
-                    <div>
-                      <span class="star"></span>
-                      <span class="star"></span>
-                      <span class="star"></span>
-                    </div>
-                    <p>рейтинг: 8.9</p>
-                </div>  -->
-                <div>
-                  <ul> <!--Правый блок-->
-                    <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                    <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                    <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                  </ul>
-                  <p>рейтинг: 8.9</p>
+
+                <div><!--Правый блок-->
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 </div>
+                  <p>рейтинг: 8.9</p>
             </div>
 
             <div><!--Третья карточка-->
@@ -107,25 +152,16 @@
                        </p>
                        <div>
                         <a href="#" class="button">Подробнее</a>
-                        <a href="#" class="button">Забронировать</a>
+                        <button class="submit">Забронировать</button>
                        </div>
                   </div>
                 </div>
-                <!--  
-                <div>Правый блок
-                     <div>
-                       <span class="star"></span>
-                       <span class="star"></span>
-                     </div>
-                     <p>рейтинг: 9.2</p>
-                </div>-->
-                <div>
-                  <ul> <!--Правый блок-->
-                    <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                    <li><img src="img/star.svg" width="18" height="17" alt="Звезда"></li>
-                  </ul>
-                  <p>рейтинг: 9.2</p>
+
+                <div><!--Правый блок-->
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 </div>
+                  <p>рейтинг: 9.2</p>
             </div>
     </section>
 </main>
