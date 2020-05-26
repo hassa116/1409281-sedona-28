@@ -10,15 +10,15 @@
 <header>
   <nav>
     <a href="index.html"> 
-        <img src="img/logo" width="138" height="70" 
-        alt="Логотип Седона»">
+      <img src="img/logo" width="138" height="70" 
+           alt="Логотип Седона»">
     </a>
     <ul>
-        <li><a href="">Информация</a></li>
-        <li><a href="">Фото и видео</a></li>
-        <li><a href="">Карта штата</a></li>
-        <li>Гостиницы</li>
-      </ul>
+      <li><a href="">Информация</a></li>
+      <li><a href="">Фото и видео</a></li>
+      <li><a href="">Карта штата</a></li>
+      <li>Гостиницы</li>
+    </ul>
   </nav>
 </header>
 
@@ -28,65 +28,67 @@
   <section>
     <h2 class="visually-hidden">критерии подбора</h2>
 
-  <!-- Здесь будет фоновый рисунок -->
-  <img src="img/background.jpg" alt="размытый вид на скалы">
+    <!-- Здесь будет фоновый рисунок -->
+    <img src="img/background.jpg" alt="размытый вид на скалы">
 
-      <div><!--Левый блок-->
-        <h3>Инфраструктура:</h3>
-        <form action="https://echo.htmlacademy.ru" method="GET">
-        <div>
-          <input type="checkbox" name="pool" id="pool-field" checked>
-                 <label for="pool-field">Бассейн</label>
-        </div>
-        <div>
-          <input type="checkbox" name="parking" id="parking-field">
-                 <label for="parking-field">Парковка</label>
-        </div>
-        <div>
-          <input type="checkbox" name="network" id="network-field">
-                 <label for="network-field">wi-fi</label>
-        </div>
-        </form>
-
-        <h3>Тип жилья:</h3>
-        <form action="https://echo.htmlacademy.ru" method="GET">
-        <div>
-          <input type="checkbox" name="hostel" id="hostel-field" checked>
-             <label for="hostel-field">Гостиница</label>
-        </div>
-        <div>
-          <input type="checkbox" name="hotel" id="hotel-field" checked>
-             <label for="hotel-field">Отель</label>
-        </div>
-        <div>
-          <input type="checkbox" name="apartments" id="apartments-field" checked>
-             <label for="apartments-field">Апартаменты</label>
-        </div>
-        </form>
+  <form action="https://echo.htmlacademy.ru" method="POST">
+    <fieldset>
+      <h3>Инфраструктура:</h3>
+        <ul>
+          <li>
+            <input type="checkbox" name="pool" id="pool-field" checked>
+            <label for="pool-field">Бассейн</label>
+          </li>
+          <li>
+            <input type="checkbox" name="parking" id="parking-field">
+            <label for="parking-field">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" name="network" id="network-field">
+            <label for="network-field">wi-fi</label>           
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+      <h3>Тип жилья:</h3>
+        <ul>
+          <li>
+            <input type="checkbox" name="hostel" id="hostel-field" checked>
+            <label for="hostel-field">Гостиница</label>
+          </li>
+          <li>
+            <input type="checkbox" name="hotel" id="hotel-field" checked>
+            <label for="hotel-field">Отель</label>
+          </li>
+          <li>
+            <input type="checkbox" name="apartments" id="apartments-field" checked>
+            <label for="apartments-field">Апартаменты</label>
+          </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+      <h3>Стоимость в сутки (р):</h3>
+      <div>
+        <label>от <input type="number" name="min-price" value="0"></label>
+        <label>до <input type="number" name="max-price" value="300"></label>
       </div>
-
-      <div> <!--Правый блок-->
-        <h3>Стоимость в сутки (р):</h3>
-        <form action="https://echo.htmlacademy.ru" method="GET" 
-                      oninput="price-at-put.value=price-at-field.value">
-            <output name="price-at-put">От 0</output>
-            <input type="range" id="price-at-field" name="price-at" min="0" max="3000" step="100">
-        </form>
-        <form action="https://echo.htmlacademy.ru" method="GET"  
-                      oninput="price-to-put.value=price-to-field.value">
-            <output name="price-to-put">До 3000</output>
-            <input type="range" id="price-to-field" name="price-to" min="0" max="3000" step="100">
-        </form>
-        <input type="submit" value="Показать">
-      </div>
+      <div></div> <!--TODO сделать бегунок-->
+      <button type="submit">Показать</button>
+    </fieldset>
+  </form>
   </section>
   <section>
-    <h2 class="visually-hidden">сортировка</h2> <!--TODO: доделать сортировку-->
-      <p>Найдено: 3</p>
+    <h2 class="visually-hidden">сортировка</h2>
+    <div>
+      <h3>Найдено: 3</h3>
       <p>Сортировка:</p>
-      <p>по цене</p>
-      <p>по типу</p>
-      <p>по рейтингу</p>
+      <ul>
+        <li><a href="#">по цене</a></li>
+        <li><a href="#">по типу</a></li>
+        <li><a href="#">по рейтингу</a></li>
+      </ul>
+                    <!--доделать кнопочки-->
+    </div>
   </section>
 
     <section>
