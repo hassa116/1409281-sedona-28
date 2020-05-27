@@ -1,22 +1,22 @@
 :root {
-    --basic-black: #000000
-    --basic-dark-brown: #503E33
-    --basic-medium-brown: #604E43
-    --basic-brown: #766357
-    --basic-dark-grey: #888888
-    --basic-medium-grey: #EBEBEB
-    --basic-grey: #333333
-    --basic-light-grey: #EEEEEE
-    --basic-plusminus-grey: #A9A9A9
-    --basic-extra-grey: #F2F2F2
-    --basic-border-grey: #E5E5E5
-    --basic-dark-cyan: #5496BD
-    --basic-medium-cyan: #669EC0
-    --basic-cyan: #81B3D2
-    --basic-white: #FFFFFF
+    --basic-black: #000000;
+    --basic-dark-brown: #503E33;
+    --basic-medium-brown: #604E43;
+    --basic-brown: #766357;
+    --basic-dark-grey: #888888;
+    --basic-medium-grey: #EBEBEB;
+    --basic-grey: #333333;
+    --basic-light-grey: #EEEEEE;
+    --basic-plusminus-grey: #A9A9A9;
+    --basic-extra-grey: #F2F2F2;
+    --basic-border-grey: #E5E5E5;
+    --basic-dark-cyan: #5496BD;
+    --basic-medium-cyan: #669EC0;
+    --basic-cyan: #81B3D2;
+    --basic-white: #FFFFFF;
 }
 body {
-    min-width: 1220px;
+    min-width: 1280px;
     margin: 0;
     padding: 0;
     font-family: PT Sans;
@@ -25,10 +25,7 @@ body {
     font-weight: 400;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-dark-grey);
-    background-image: url("../img/welcome.svg"), url("../img/Frame2.jpg");
-    background-position: 411px 132px, 40px 55px;
-    background-repeat: no-repeat;
+    background-color: var(--basic-light-grey);
 }
 a {
     text-decoration: none;
@@ -41,8 +38,11 @@ img {
 /* main navigation */
 
 .wrapper {
-    min-width: 1280;
-    background-color: var(--basic-extra-grey);
+    background-image: url("../img/welcome.svg"), url("../img/Frame2.jpg");
+    background-position: 411px 132px, 40px 55px;
+    background-repeat: no-repeat;
+   /* min-width: 1220px;
+    background-color: var(--basic-white);*/
 }
 .main-navigation {
     font-size: 14px;
@@ -77,6 +77,9 @@ img {
 .site-navigation a:active {
     color: var(--basic-grey);
 }
+/*.container {
+    background-color: var(--basic-white);
+}*/
 .advantages h3 {
     font-size: 26px;
     font-weight: 700;
@@ -94,12 +97,12 @@ img {
     font-weight: 700;
     text-align: center;
     line-height: 24px;
-    padding: 30px;
 }
 .advantages-final p {
     text-align: center;
     line-height: 24px;
     color: var(--basic-grey);
+    padding: 30px;
 }
 .search {
     background-color: var(--basic-white);
