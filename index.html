@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Проект Седона</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
 <header>
-<nav>
-  <div> 
+<nav class="main-navigation">
+  <div class="main-navigation-images"> 
     <img src="img/logo.png" width="138" height="70"
     alt="Логотип Седона">
   </div>
-  <ul>
-    <li><a href="">Информация</a></li>
-    <li><a href="">Фото и видео</a></li>
-    <li><a href="">Карта штата</a></li>
-    <li><a href="сatalog.html">Гостиницы</a></li>
+  <ul class="site-navigation">
+    <li class="switch-left"><a href="#">Информация</a></li>
+    <li class="switch-left"><a href="#">Фото и видео</a></li>
+    <li class="switch-right"><a href="#">Карта штата</a></li>
+    <li class="switch-right"><a href="сatalog.html">Гостиницы</a></li>
   </ul>
 </nav>
 </header>
-<main>
+<main class="container">
   <h1 class="visually-hidden">Главная страница Седона</h1>
-  <!-- Здесь будет фоновый рисунок -->
-    
+<!--    
 <section>
   <h2 class="visually-hidden">Заходная группа</h2>
   <img src="img/Frame2.jpg" alt="панорамный вид скал Седоны"> 
   <img src="img/welcome.svg" width="457" height="351"
   alt="Добро пожаловать в Седону">
-</section>
+</section>-->
 
+<div class="advantages">
 <section>
   <h2 class="visually-hidden">Преимущества Седоны</h2>
     <h3>Седона — небольшой городок в Аризоне, заслуживающий большего! </h3>
   <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 </section>
-
-<section>
+</div>
+<section> <!--TODO: доделать оформление-->
   <div>
     <h2 class="visually-hidden">Первая причина</h2>
       <div>
@@ -89,68 +93,83 @@
       <p>Большинство едет в Гранд Каньон и толпится там</p>
     </li>
   </ul>
-</section>
+</section> <!--TODO: доделать оформление - конец -->
 
+<div class="advantages-final">
 <section>
   <h2 class="visually-hidden">поиск гостиницы</h2>
     <h3>Заинтересовались?</h3> 
     <p>Укажите предполагаемые даты поездки, 
         и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+</div>
 
-<button type="button">Поиск гостиницы в Седоне</button>
- 
+<div class="search"> 
+<button class="search-button" type="button">Поиск гостиницы в Седоне</button>
+<div class="search-date">
 <form action="https://echo.htmlacademy.ru" method="POST">
   <fieldset>
     <label for="arrivaldate">Дата заезда:</label>
+    <div class="arrival-date">
     <input type="text" name="checkin" id="arrivaldate" placeholder="24 апреля 2017" required>
     <span class="calendar"></span>
+    </div>
   </fieldset>
   <fieldset>
     <label for="departuredate">Дата выезда:</label>
+    <div class="arrival-date">
     <input type="text" name="checkout" id="departuredate" placeholder="4 июля 2017" required>
     <span class="calendar"></span>
+    </div>
   </fieldset>
-  <fieldset>Взрослые:
-    <button type="button">-</button>
+  <fieldset> 
+    <p>Взрослые:
+      <div class="search-family">
+    <button class="plus-minus" type="button">-</button>
     <input type="number" min="0" max="4" value="2" readonly class="too">
-    <button type="button">+</button>
-  </fieldset>
-  <fieldset>Дети:
-    <button type="button">-</button>
+    <button class="plus-minus" type="button">+</button>
+      </div>
+    </p>
+    <p>Дети:  
+      <div class="search-family">
+    <button class="plus-minus" type="button">-</button>
     <input type="number" min="0" max="4" value="0" readonly class="ziro">
-    <button type="button">+</button>
+    <button class="plus-minus" type="button">+</button>
+      </div>
+    </p>
   </fieldset>
-  <button type="submit">Найти</button>
+  <button class="search-result" type="submit">Найти</button>
 </form>
+</div>
+</div>
 </section>
 
-<!-- Здесь будет карта -->
-<img src="karta1" alt="карта">
+<!-- Здесь будет карта 
+<img src="karta1" alt="карта">-->
 
 </main>
 
-<footer>
-  <div>
-    <a href="#">#visitSEDONA</a>
-    <a href="#">ТЕЛ: +7(495) 666-01-66</a>
+<footer class="main-footer">
+  <div class="left-footer">
+    <p><a href="#">#visitSEDONA</a></p>
+    <p><a href="#">ТЕЛ: +7(495) 666-01-66</a></p>
   </div>
   <div>
-    <ul>
+    <ul class="site-social">
       <li>
-        <a href="#"><img src="img/twitter.svg" width="17" height="17" 
+        <a class="site=social-twitter" href="#"><img src="img/twitter.svg" width="17" height="17" 
                       alt="Твиттер"></a>
       </li>
       <li>
-        <a href="#"><img src="img/fb-icon.svg" width="12" height="22" 
+        <a class="site=social-fb" href="#"><img src="img/fb-icon.svg" width="12" height="22" 
                       alt="Фейсбук"></a>
       </li>
       <li>
-        <a href="#"><img src="img/youtube.svg" width="20" height="16" 
+        <a class="site=social-yoytube" href="#"><img src="img/youtube.svg" width="20" height="16" 
                       alt="Ютюб"></a>
       </li>
     </ul>
   </div>
-  <div>
+  <div class="site-contact">
     <a href="https://htmlacademy.ru/intensive/htmlcss">
        website by <img src="img/logo-htmlacademy.svg" 
                     width="115" height="41" 
@@ -158,5 +177,6 @@
     </a>
   </div>
 </footer>
+</div>
 </body>
 </html>

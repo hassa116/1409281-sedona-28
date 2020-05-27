@@ -1,0 +1,201 @@
+:root {
+    --basic-black: #000000
+    --basic-dark-brown: #503E33
+    --basic-medium-brown: #604E43
+    --basic-brown: #766357
+    --basic-dark-grey: #888888
+    --basic-medium-grey: #EBEBEB
+    --basic-grey: #333333
+    --basic-light-grey: #EEEEEE
+    --basic-plusminus-grey: #A9A9A9
+    --basic-extra-grey: #F2F2F2
+    --basic-border-grey: #E5E5E5
+    --basic-dark-cyan: #5496BD
+    --basic-medium-cyan: #669EC0
+    --basic-cyan: #81B3D2
+    --basic-white: #FFFFFF
+}
+body {
+    min-width: 1220px;
+    margin: 0;
+    padding: 0;
+    font-family: PT Sans;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-dark-grey);
+    background-image: url("../img/welcome.svg"), url("../img/Frame2.jpg");
+    background-position: 411px 132px, 40px 55px;
+    background-repeat: no-repeat;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* main navigation */
+
+.wrapper {
+    min-width: 1280;
+    background-color: var(--basic-extra-grey);
+}
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+.main-navigation-images {
+    background-position: top center;
+    background-color: transparent;
+}
+.site-navigation {
+    list-style: none;
+}
+.switch-left {
+    text-align: left;
+}
+.switch-right {
+    text-align: right;
+}
+.visually-hidden {
+    display: none;
+}
+.site-navigation a {
+    color: var(--basic-black);
+}
+.site-navigation a:focus,
+.site-navigation a:hover {
+    color: var(--basic-cyan);
+}
+.site-navigation a:active {
+    color: var(--basic-grey);
+}
+.advantages h3 {
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 26px;
+    padding: 40px;
+}
+.advantages p {
+    text-align: center;
+    line-height: 26px;
+    color: var(--basic-grey);
+}
+.advantages-final h3 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 24px;
+    padding: 30px;
+}
+.advantages-final p {
+    text-align: center;
+    line-height: 24px;
+    color: var(--basic-grey);
+}
+.search {
+    background-color: var(--basic-white);
+}
+.search-button {
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--basic-white);
+    background-color: var(--basic-brown);
+    background-position: center;
+    text-transform: uppercase;
+    border: none;
+}
+.search-button:focus,
+.search-button:hover {
+    background-color: var(--basic-dark-grey);
+}
+.search-button:active {
+    background-color: var(--basic-dark-brown);  /*текст сделать прозрачным*/
+}
+.search-date {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    border: none;
+}
+.arrival-date {
+    background-color: var(--basic-extra-grey);
+}
+.arrival-date:hover {
+    background-color: var(--basic-medium-grey);
+}
+.arrival-date:fokus {
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-border-grey);
+}
+.search-family {
+    background-color: var(--basic-extra-grey);
+}
+.plus-minus {
+    color: var(--basic-plusminus-grey);
+}
+.plus-minus:focus,
+.plus-minus:hover {
+    color: var(--basic-black);
+}
+.plus-minus:active {
+    color: var(--basic-cyan);
+}
+.search-result {
+    font: inherit;
+    font-size: 21px;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--basic-white);
+    background-color: var(--basic-cyan);
+    background-position: center;
+    text-transform: uppercase;
+    border: none;
+}
+.search-result:focus,
+.search-result:hover {
+    background-color: var(--basic-medium-cyan);
+}
+.search-result:active {
+    background-color: var(--basic-dark-cyan);  /*текст сделать прозрачным*/
+}
+
+/* footer navigation */
+
+.main-footer {
+    background-color: var(--basic-white);
+}
+.left-footer {
+    color: var(--basic-black);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+}
+.site-social {
+    list-style: none;
+    background-color: var(--basic-cyan);
+}
+.site-social:focus,
+.site-social:hover {
+    background-color: var(--basic-medium-cyan);
+}
+.site-social:active {
+    background-color: var(--basic-dark-cyan);  /* прозрачность svg?*/
+}
+.site-contact {
+    font-size: 14px;
+    line-height: 26px;
+    text-align: left;
+}                                   /* как красить svg при изменении состояний?*/
