@@ -25,7 +25,7 @@ body {
     font-weight: 400;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-light-grey);
+    background-color: var(--basic-white);
 }
 a {
     text-decoration: none;
@@ -36,25 +36,19 @@ img {
 }
 
 /* main navigation */
-
+/*
 .wrapper {
-    background-image: url("../img/welcome.svg"), url("../img/Frame2.jpg");
-    background-position: 411px 132px, 40px 55px;
-    background-repeat: no-repeat;
-   /* min-width: 1220px;
-    background-color: var(--basic-white);*/
-}
+
+}*/
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: var(--basic-black);
-    background-color: var(--basic-white);
 }
-.main-navigation-images {
-    background-position: top center;
-    background-color: transparent;
-}
+/*.navigation-logo {
+    
+}*/
 .site-navigation {
     list-style: none;
 }
@@ -63,9 +57,6 @@ img {
 }
 .switch-right {
     text-align: right;
-}
-.visually-hidden {
-    display: none;
 }
 .site-navigation a {
     color: var(--basic-black);
@@ -77,9 +68,16 @@ img {
 .site-navigation a:active {
     color: var(--basic-grey);
 }
-/*.container {
+.visually-hidden {
+    display: none;
+}
+.container {
+    background-image: url("../img/background.jpg");
+    background-position: 40px 55px;
+    background-repeat: no-repeat;
+    min-width: 1220px;
     background-color: var(--basic-white);
-}*/
+}
 .advantages h3 {
     font-size: 26px;
     font-weight: 700;
@@ -92,13 +90,13 @@ img {
     line-height: 26px;
     color: var(--basic-grey);
 }
-.advantages-final h3 {
+.proposition h3 {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
     line-height: 24px;
 }
-.advantages-final p {
+.proposition p {
     text-align: center;
     line-height: 24px;
     color: var(--basic-grey);
@@ -125,41 +123,50 @@ img {
 .search-button:active {
     background-color: var(--basic-dark-brown);  /*текст сделать прозрачным*/
 }
-.search-date {
+.search-date, .search-family {
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
     border: none;
 }
-.arrival-date {
+.search-date input {
     background-color: var(--basic-extra-grey);
+    border: none;
 }
-.arrival-date:hover {
+.search-date input:hover {
     background-color: var(--basic-medium-grey);
+    border: none;
 }
-.arrival-date:fokus {
+.search-date input:focus {
     background-color: var(--basic-white);
     border: 2px solid var(--basic-border-grey);
 }
-.search-family {
+.search-family input {
     background-color: var(--basic-extra-grey);
+    border: none;
+}
+.adult, .children {
+    background-color: var(--basic-extra-grey);
+    border: none;
 }
 .plus-minus {
     color: var(--basic-plusminus-grey);
+    background-color: transparent;
+    border: none;
 }
 .plus-minus:focus,
 .plus-minus:hover {
     color: var(--basic-black);
+    border: none;
 }
 .plus-minus:active {
     color: var(--basic-cyan);
+    border: none;
 }
 .search-result {
-    font: inherit;
     font-size: 21px;
     font-weight: 700;
     text-align: center;
-    vertical-align: middle;
     color: var(--basic-white);
     background-color: var(--basic-cyan);
     background-position: center;
@@ -178,13 +185,14 @@ img {
 
 .main-footer {
     background-color: var(--basic-white);
+    text-decoration: none;
 }
 .left-footer {
     color: var(--basic-black);
     font-size: 21px;
     font-weight: 700;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
 }
 .site-social {
     list-style: none;
@@ -200,5 +208,5 @@ img {
 .site-contact {
     font-size: 14px;
     line-height: 26px;
-    text-align: left;
+    text-align: center;
 }                                   /* как красить svg при изменении состояний?*/

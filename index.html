@@ -8,12 +8,11 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<div class="wrapper">
-<header>
+<header class="header">
 <nav class="main-navigation">
-  <div class="main-navigation-images"> 
-    <img src="img/logo.svg" width="138" height="70"
-    alt="Логотип Седона">
+  <div class="navigation-logo"> 
+    <a hreh="#"> <img src="img/logo.svg" width="138" height="70"
+    alt="Логотип Седона"></a>
   </div>
   <ul class="site-navigation">
     <li class="switch-left"><a href="#">Информация</a></li>
@@ -25,21 +24,19 @@
 </header>
 <main class="container">
   <h1 class="visually-hidden">Главная страница Седона</h1>
-<!--    
-<section>
+    
+<section class="main-welcome">
   <h2 class="visually-hidden">Заходная группа</h2>
-  <img src="img/Frame2.jpg" alt="панорамный вид скал Седоны"> 
   <img src="img/welcome.svg" width="457" height="351"
   alt="Добро пожаловать в Седону">
-</section>-->
+</section>
 
-<div class="advantages">
-<section>
+<section class="advantages">
   <h2 class="visually-hidden">Преимущества Седоны</h2>
     <h3>Седона — небольшой городок в Аризоне, заслуживающий большего! </h3>
   <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 </section>
-</div>
+
 <section> <!--TODO: доделать оформление-->
   <div>
     <h2 class="visually-hidden">Первая причина</h2>
@@ -48,7 +45,7 @@
         <p>-№1-</p>
         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img src="foto4" width="220" height="165" alt="Красивый дом в цветах">
+      <img src="house-in-flowers.jpg" width="220" height="165" alt="Красивый дом в цветах">
   </div>
   <ul>
     <li>
@@ -69,7 +66,7 @@
   </ul>
   <div>
     <h2 class="visually-hidden">Вторая причина</h2>
-    <img src="foto5" width="220" height="165" alt="каменный мост">
+    <img src="stone-bridge.jpg" width="220" height="165" alt="каменный мост">
     <div>
       <h3>Там есть мост дъявола</h3>
       <p>-№2-</p>
@@ -95,51 +92,47 @@
   </ul>
 </section> <!--TODO: доделать оформление - конец -->
 
-<div class="advantages-final">
-<section>
+<section class="proposition">
   <h2 class="visually-hidden">поиск гостиницы</h2>
     <h3>Заинтересовались?</h3> 
     <p>Укажите предполагаемые даты поездки, 
         и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-</div>
 
 <div class="search"> 
 <button class="search-button" type="button">Поиск гостиницы в Седоне</button>
-<div class="search-date">
+
 <form action="https://echo.htmlacademy.ru" method="POST">
-  <fieldset>
+  <fieldset class="search-date">
     <label for="arrivaldate">Дата заезда:</label>
     <div class="arrival-date">
     <input type="text" name="checkin" id="arrivaldate" placeholder="24 апреля 2017" required>
     <span class="calendar"></span>
     </div>
   </fieldset>
-  <fieldset>
+  <fieldset class="search-date">
     <label for="departuredate">Дата выезда:</label>
     <div class="arrival-date">
     <input type="text" name="checkout" id="departuredate" placeholder="4 июля 2017" required>
     <span class="calendar"></span>
     </div>
   </fieldset>
-  <fieldset> 
-    <p>Взрослые:
-      <div class="search-family">
+  <fieldset class="search-family"> 
+    Взрослые:
+      <div class="adult">
     <button class="plus-minus" type="button">-</button>
     <input type="number" min="0" max="4" value="2" readonly class="too">
     <button class="plus-minus" type="button">+</button>
       </div>
-    </p>
-    <p>Дети:  
-      <div class="search-family">
+    Дети:  
+      <div class="children">
     <button class="plus-minus" type="button">-</button>
     <input type="number" min="0" max="4" value="0" readonly class="ziro">
     <button class="plus-minus" type="button">+</button>
       </div>
-    </p>
   </fieldset>
   <button class="search-result" type="submit">Найти</button>
 </form>
-</div>
+
 </div>
 </section>
 
@@ -160,7 +153,7 @@
                       alt="Твиттер"></a>
       </li>
       <li>
-        <a class="site=social-fb" href="#"><img src="img/fb-icon.svg" width="12" height="22" 
+        <a class="site=social-fb" href="#"><img src="img/fb.svg" width="12" height="22" 
                       alt="Фейсбук"></a>
       </li>
       <li>
