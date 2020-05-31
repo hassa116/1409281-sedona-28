@@ -38,8 +38,11 @@ img {
 .page-body {
     min-height: 100%;
     display: grid;
+    width: 1280px;
+    padding-left: 40px;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
+    background-color: var(--basic-extra-grey);
 }
 /* main navigation */
 /*
@@ -50,6 +53,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 1200px;
+    background-color: var(--basic-white);
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -75,13 +80,15 @@ img {
 .container {
     margin: 0;
     padding: 0;
+    width: 1200px;
+    background-color: var(--basic-white);
 }
 .main-welcome {
     height: 510px;
     background-image: url("../img/background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-    min-width: 1220px;
+    min-width: 1200px;
     background-color: var(--basic-white);
 }
 .image-flex {
@@ -116,7 +123,6 @@ img {
     grid-template-rows: repeat(4, 1fr);
     width: 1200px;
     height: 1100px;
-    margin-left: 40px;
 }
 .box1 {
     grid-column: 1 / 2;
@@ -243,9 +249,20 @@ img {
     padding-top: 10px;
     padding-bottom: 30px;
 }
+.map {
+    background-image: url(../img/map.png);
+    margin-top: 86px;
+    background-repeat: no-repeat;
+    min-width: 1200px;
+    height: 594px;
+}
 .search {
     width: 568px;
     height: 481px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: -675px;
     background-color: var(--basic-white); 
 }
 .search-button {
@@ -361,13 +378,6 @@ img {
 .search-result:active {
     background-color: var(--basic-dark-cyan);  /*текст сделать прозрачным*/
 } 
-.map {
-    background-image: url(../img/map.png);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    min-width: 1220px;
-    height: 594px;
-}
 
 /* footer navigation */
 
@@ -377,7 +387,6 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--basic-white);
     text-decoration: none;
-    padding: 0 60px;
 }
 .left-footer {
     padding: 20px 0 0 0;
@@ -411,13 +420,12 @@ img {
     background-color: var(--basic-dark-cyan);  /* прозрачность svg?*/
 }
 .site-contact {
-    width: 200px;
+    width: 400px;
     justify-self: center;
     text-align: center;
   /*  border: 2px solid black;*/
 }                                   /* как красить svg при изменении состояний?*/
 .site-contact a {
-    padding: 0;
     list-style: none;
     font-size: 14px;
     line-height: 26px;
@@ -425,5 +433,6 @@ img {
 }
 .site-contact img {
     padding-top: 30px;
+    text-align: center;
     justify-self: center;
 }
