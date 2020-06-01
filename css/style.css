@@ -244,6 +244,7 @@ img {
     font-weight: 700;
     text-transform: uppercase;
     padding: 3px 17px;
+    border: none;
 }
 .catalog-details button:hover,
 .catalog-details button:focus {
