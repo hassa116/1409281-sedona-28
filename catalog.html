@@ -12,13 +12,13 @@
 <div class="wrapper">
 <header class="header">
   <nav class="main-navigation">
-    <a href="#" class="navigation-logo"> <img src="img/logo.svg" width="138" height="70"
+    <a href="#" class="main-navigation navigation-logo"> <img src="img/logo.svg" width="138" height="70"
       alt="Логотип Седона"></a>
     <ul class="site-navigation">
-      <li class="switch-left"><a href="">Информация</a></li>
-      <li class="switch-left"><a href="">Фото и видео</a></li>
-      <li class="switch-right"><a href="">Карта штата</a></li>
-      <li class="switch-right">Гостиницы</li>
+      <li><a href="#">Информация</a></li>
+      <li><a class="navigation-left" href="#">Фото и видео</a></li>
+      <li><a href="#">Карта штата</a></li>
+      <li>Гостиницы</li>
     </ul>
   </nav>
 </header>
@@ -66,26 +66,40 @@
     </fieldset>
     <fieldset class="catalog-box3">
       <h3 class="catalog-list1">Стоимость в сутки (р):</h3>
-      <div>
-        <label>от <input type="number" name="min-price" value="0"></label>
-        <label>до <input type="number" name="max-price" value="300"></label>
-      </div>
-      <div></div> <!--TODO сделать бегунок-->
-      <button type="submit">Показать</button>
+      <div class="catalog-range-filter">
+        <div class="catalog-price-controls">
+          <label class="min-price">
+            от <input type="number" name="min-price" value="0">
+          </label>
+          <label class="max-price">
+            до <input type="number" name="max-price" value="3000">
+          </label>
+        </div>
+        <div class="catalog-range-controls">
+          <div class="scale">
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
+        </div>
+        <button type="submit">Показать</button>
+      </div> 
     </fieldset>
   </form>
   </section>
   <section>
     <h2 class="visually-hidden">сортировка</h2>
-    <div>
-      <h3>Найдено: 3</h3>
-      <p>Сортировка:</p>
-      <ul>
-        <li><a href="#">по цене</a></li>
-        <li><a href="#">по типу</a></li>
-        <li><a href="#">по рейтингу</a></li>
+    <div class="sorting">
+      <h3 class="sorting-item">Найдено: 3</h3>
+      <p class="sorting-item">Сортировка:</p>
+      <ul class="sorting-item">
+        <li><a class="price" href="#">по цене</a></li>
+        <li><a class="type" href="#">по типу</a></li>
+        <li><a class="rating" href="#">по рейтингу</a></li>
       </ul>
-                    <!--доделать кнопочки-->
+      <div class="shape">
+        <a href="#"><img src="img/Shape.svg" width="15" height="15"></a>
+        <a class="shape-self" href="#"><img src="img/Shape.svg" width="15" height="15"></a>
+      </div>
     </div>
   </section>
   <div class="line"></div>
@@ -125,7 +139,7 @@
                        <h3>Desert Quail Inn</h3>
                        <p>
                           <span>Мотель</span>
-                          <span class="indent">от 3000 р.</span>
+                          <span class="indent-desert">от 3000 р.</span>
                        </p>
                      <div class="catalog-details">
                       <a href="#" class="button">Подробнее</a>
@@ -150,7 +164,7 @@
                        <h3>Villas at Poco Diablo</h3>
                        <p>
                           <span>Апартаменты</span>
-                          <span class="indent">от 2000 р.</span>
+                          <span class="indent-villas">от 2000 р.</span>
                        </p>
                        <div class="catalog-details">
                         <a href="#" class="button">Подробнее</a>
@@ -173,8 +187,7 @@
     <a href="#">#visitSEDONA</a>
     <p><a href="#">ТЕЛ: +7(495) 666-01-66</a></p>
   </div>
-  <div class="site-social">
-    <ul>
+    <ul class="site-social">
       <li>
         <a class="site=social-twitter" href="#"><img src="img/twitter.svg" width="17" height="17" 
                       alt="Твиттер"></a>
@@ -188,14 +201,11 @@
                       alt="Ютюб"></a>
       </li>
     </ul>
-  </div>
-  <div class="site-contact">
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-       website by <img src="img/logo-htmlacademy.svg" 
-                    width="115" height="41" 
-                    alt="Логотип Академии">
-    </a>
-  </div>
+    <a class="site-contact" href="https://htmlacademy.ru/intensive/htmlcss">
+      website by <img class="site-contact-img" src="img/logo-htmlacademy.svg" 
+                   width="115" height="41" 
+                   alt="Логотип Академии">
+   </a>
 </footer>
 </div>
 </div>
