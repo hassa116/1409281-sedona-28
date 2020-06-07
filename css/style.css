@@ -215,15 +215,15 @@ img {
     box-shadow: 0 2px 1px 0 var(--basic-button-grey);
     cursor: pointer;
   }
-  .catalog-range-controls .toggle:hover,
-  .catalog-range-controls .toggle:focus {
+.catalog-range-controls .toggle:hover,
+.catalog-range-controls .toggle:focus {
     top: -13px;
     border: 10px solid var(--basic-white); 
   }
-  .catalog-range-controls .toggle-min {
+.catalog-range-controls .toggle-min {
     left: 0px;
   }
-  .catalog-range-controls .toggle-max {
+.catalog-range-controls .toggle-max {
     left: 260px;
   }
 .catalog-price-controls {
@@ -629,16 +629,26 @@ img {
 .search-family {
     width: 100%;
     border: none;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--basic-black);
 }
 .search-date input {
     width: 336px;
     height: 38;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
     background-color: var(--basic-extra-grey);
     border: none;
     color: var(--basic-black);
     text-transform: uppercase;
     padding: 10px;
     margin-left: 4px;
+}
+.arrival-date {
+    color: var(--basic-black);
 }
 .data {
     padding-right: 10px;
